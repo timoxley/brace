@@ -1,12 +1,12 @@
 {
-  "name": "brace",
-  "version": "0.11.1",
-  "description": "browserify compatible version of the ace editor.",
+  "name": "@timoxley/brace",
+  "version": "1.4.7-beta.1",
+  "description": "UPDATED browserify compatible version of the ace editor v1.4.7.",
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
     "update": "(cd build && node ./update && node ./update-ts)",
-    "test": "browserify test/b.js > test/bundle.js --debug && opener test/index.html"
+    "test": "browserify test/error-annotations.js > test/bundle.js --debug && opener test/index.html"
   },
   "repository": {
     "type": "git",
@@ -15,11 +15,11 @@
   "homepage": "https://github.com/thlorenz/brace",
   "dependencies": {},
   "devDependencies": {
-    "browserify": "~4.2.0",
-    "opener": "~1.3.0",
-    "shelljs": "~0.2.6",
-    "tape": "~4.0.0",
-    "uglify-js": "~2.2.5"
+    "browserify": "~16.5.0",
+    "opener": "~1.5.1",
+    "shelljs": "~0.8.3",
+    "tape": "~4.11.0",
+    "terser": "^4.3.9"
   },
   "keywords": [
     "ace",

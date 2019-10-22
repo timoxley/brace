@@ -1,14 +1,13 @@
 'use strict';
 
 var path   =  require('path')
-  , uglify =  require('uglify-js')
+  , uglify =  require('terser')
   , fs     =  require('fs')
   , workers = require('./workers')
   ;
 
-
 function minify(code) {
-  var compressor = uglify.Compressor()
+  var compressor = new uglify.Compressor({})
     , ast = uglify.parse(code);
 
   ast.figure_out_scope();
