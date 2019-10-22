@@ -1,6 +1,6 @@
 {
   "name": "@timoxley/brace",
-  "version": "1.4.7-beta.1",
+  "version": "1.4.7-beta.2",
   "description": "UPDATED browserify compatible version of the ace editor v1.4.7.",
   "main": "index.js",
   "typings": "index.d.ts",
